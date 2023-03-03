@@ -20,6 +20,12 @@ cd platform
 mvn install --projects ../hdf5/platform
 ```
 
+To load the native binaries, <a href="janelia/javacpp-hdf5/1.14.0-1.5.9-SNAPSHOT/javadoc/org/bytedeco/hdf5/hdf5_java.html">Construct the `org.bytedeco.hdf5.hdf5_java` class</a>.
+
+Of particular interest, we to build the capability to retrieve all chunk locations from <a href="janelia/javacpp-hdf5/1.14.0-1.5.9-SNAPSHOT/javadoc/org/bytedeco/hdf5/global/hdf5.html#H5Dchunk_iter(long,long,org.bytedeco.hdf5.H5D_chunk_iter_op_t,org.bytedeco.javacpp.Pointer)">H5Dchunk_iter</a>.
+
+### JHDF5
+
 The future plan is to rebase the JHDF5 bindings on top of this.
 <a href="https://unlimited.ethz.ch/display/JHDF/Documentation+Page">https://unlimited.ethz.ch/display/JHDF/Documentation+Page</a>
 
@@ -29,4 +35,3 @@ The four C files located in the <a href="https://sissource.ethz.ch/sispub/jhdf5/
 * <a href="https://sissource.ethz.ch/sispub/jhdf5/-/blob/master/source/c/h5lHelperImp.c">h5lHelperImp.c</a>
 * <a href="https://sissource.ethz.ch/sispub/jhdf5/-/blob/master/source/c/h5pHelperImp.c">h5pHelperImp.c</a>
 
-Of particular interest, we to build the capability to retrieve all chunk locations from <a href="janelia/javacpp-hdf5/1.14.0-1.5.9-SNAPSHOT/javadoc/org/bytedeco/hdf5/global/hdf5.html#H5Dchunk_iter(long,long,org.bytedeco.hdf5.H5D_chunk_iter_op_t,org.bytedeco.javacpp.Pointer)">H5Dchunk_iter</a>.
