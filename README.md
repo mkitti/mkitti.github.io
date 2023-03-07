@@ -15,7 +15,7 @@ To build the current SNAPSHOT do the following.
 ```
 git clone --branch mkitti/hdf_hdfgroup https://github.com/mkitti/javacpp-presets.git
 cd javacpp-presets
-mvn install --projects .,hdf5
+mvn install --projects .,hdf5 -Djavacpp.platform.host
 cd platform
 mvn install --projects ../hdf5/platform
 ```
